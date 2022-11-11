@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/style/style-portuguese.css">
+  <link rel="shortcut icon" href="./assets/images/brazil.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <title>Jogo da Forca</title>
+</head>
+<body>
+
+  <div class="container">
+    <h1>JOGO DA FORCA</h1>
+    <h2 class="instruction">
+      <span class="animate__animated animate__fadeIn">Para iniciar, escolha uma categoria pressionando um dos botões abaixo</span>
+    </h2>
+
+    <div class="buttons"> 
+      <button id="frutas" class="choice-button">Frutas</button>
+      <button id="animais" class="choice-button">Animais</button>
+      <button id="paises" class="choice-button">Países</button>
+    </div>
+ 
+    <h3>Utilizando o teclado abaixo, escolha as letras que podem formar a palavra. Você tem 5 chances de salvar a vida de seu boneco!</h3>
+
+    <fieldset id="teclado">
+      <input id="q" type="button" class="first-letters keys" name="q" value="q" />
+      <input id="w" type="button" class="first-letters keys" name="w" value="w" />
+      <input id="e" type="button" class="first-letters keys" name="e" value="e" />
+      <input id="r" type="button" class="first-letters keys" name="r" value="r" />
+      <input id="t" type="button" class="first-letters keys" name="t" value="t" />
+      <input id="y" type="button" class="first-letters keys" name="y" value="y" />
+      <input id="u" type="button" class="first-letters keys" name="u" value="u" />
+      <input id="i" type="button" class="first-letters keys" name="i" value="i" />
+      <input id="o" type="button" class="first-letters keys" name="o" value="o" />
+      <input id="p" type="button" class="first-letters keys" name="p" value="p" />
+      <br>
+      <input id="a" type="button" class="keys" name="a" value="a" />
+      <input id="s" type="button" class="keys" name="s" value="s" />
+      <input id="d" type="button" class="keys" name="d" value="d" />
+      <input id="f" type="button" class="keys" name="f" value="f" />
+      <input id="g" type="button" class="keys" name="g" value="g" />
+      <input id="h" type="button" class="keys" name="h" value="h" />
+      <input id="j" type="button" class="keys" name="j" value="j" />
+      <input id="k" type="button" class="keys" name="k" value="k" />
+      <input id="l" type="button" class="keys" name="l" value="l" />
+      <input id="ç" type="button" class="keys" name="ç" value="ç" />
+      <br>          
+      <input id="z" type="button" class="keys" name="z" value="z" />
+      <input id="x" type="button" class="keys" name="x" value="x" />
+      <input id="c" type="button" class="keys" name="c" value="c" />
+      <input id="v" type="button" class="keys" name="v" value="v" />                      
+      <input id="b" type="button" class="keys" name="b" value="b" />
+      <input id="n" type="button" class="keys" name="n" value="n" />
+      <input id="m" type="button" class="keys" name="m" value="m" />
+    </fieldset>
+
+    <h2 id="info-word"></h2>
+    <h3 id="remaining-trials"></h3>
+    <h2 id="secret-word"></h2>
+
+    
+    <section id="images-forca" class="card">
+      <div id="forca1"></div>
+      <div id="forca2"></div>
+      <div id="forca3"></div>
+      <div id="forca4"></div>
+      <div id="forca5"></div>
+      <div id="forca6"></div>
+      <div id="forca7"></div>
+      <div id="progress">
+        <div class="color"></div>
+      </div>
+    </section>
+
+    <section id="images-win-lose">
+      <div id="win-image"></div>
+      <div id="lose-image"></div>
+    </section>
+    
+    <div class="reset-audio buttons">
+      <button id="reset">Reset</button>
+      <button id="audio">Music Off</button>
+    </div>
+  </div>
+
+  <footer>
+    <p><a href="./credits-portuguese.html">Créditos</a></p>
+    <p><a href="./index.html">Página inicial</a></p>
+  </footer>
+
+  <audio id="bg-music" loop="true" src="./assets/sounds/bg-music.mp3"></audio>
+  <audio id="correct-letter" src="./assets/sounds/correctLetter-audio.mp3"></audio>
+  <audio id="incorrect-letter" src="./assets/sounds/incorrectLetter-audio.mp3"></audio>
+  <audio id="bip-audio" loop="true" src="./assets/sounds/bip.mp3"></audio>
+  <audio id="win-audio" src="./assets/sounds/win-audio.mp3"></audio>
+  <audio id="lose-audio" src="./assets/sounds/lose-audio.mp3"></audio>
+  <audio id="marreco" src="./assets/sounds/marreco-tropadeelite.mp3"></audio>
+  <audio id="vaiMorrer-tropa" src="./assets/sounds/vaimorrergntcoronel-topadeelite.mp3" ></audio>
+
+  <script src="./assets/script/game-portuguese.js"></script>
+  <script src="./assets/script/index-portuguese.js"></script>
+ 
+</body>
+</html>

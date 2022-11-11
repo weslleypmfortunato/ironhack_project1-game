@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/images/tks.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;900&display=swap" rel="stylesheet">
+  <title>Hangman</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+      text-align: center;
+    }
+
+    h1 {
+      margin: 200px 0px 30px 0px;
+    }
+
+    h2 {
+      margin-top: 30px;
+    }
+
+    p {
+      margin: 3px;
+    }
+
+    p a {
+      text-decoration: none;
+      color: blueviolet;
+    }
+
+    p a:hover {
+      color: red;
+      font-size: 1.1rem;
+    }
+
+    footer {
+      margin: 30px;
+    }
+
+    footer p {
+      margin: 3px;
+    }
+
+    .card {
+      --border-width: 7px;
+      position: relative;
+    }
+
+    .card::after {
+      position: fixed; /* deve mudar para fixed quando acabar o jogo */
+      content: "";
+      top: calc(-1 * var(--border-width));
+      left: calc(-1 * var(--border-width));
+      z-index: -10;
+      width: calc(100% + var(--border-width) * 2);
+      height: calc(100% + var(--border-width) * 2);
+      background: linear-gradient(
+        60deg,
+        #ACF246,
+        #F23B7B,
+        #79A638,
+        #17A674,
+        #2EF2AE
+      );
+      background-size: 300% 300%;
+      border-radius: 5px;
+      animation: moveGradient 5s alternate infinite;
+    }
+
+    @keyframes moveGradient {
+      50% {
+        background-position: 100% 50%;
+      }
+    }
+  </style>
+
+</head>
+<body class="card">
+  <div class="container">
+    <h1>Hangman Game</h1>
+    <h2>Audios</h2>
+    <p><a href="https://www.myinstants.com/pt/index/ca/" target="_blank">MyInstants</a></p>
+    <h2>Images</h2>
+    <p><a href="https://www.youtube.com" target="_blank">YouTube</a></p>
+    <p><a href="https://www.google.com" target="_blank">Google</a></p>
+    <h2>Background Animation</h2>
+    <p><a href="https://codepen.io/alphardex/pen/vYEYGzp" target="_blank">Alphardex</a></p>
+    <h2>Code</h2>
+    <p><a href="https://github.com/weslleypmfortunato" target="_blank">Weslley Fortunato</a></p>
+    <h2>Support</h2>
+    <p><a href="https://github.com/Briofita09" target="_blank">Felipe Osório</a></p>
+    <p><a href="https://github.com/oniltos" target="_blank">Nilton Santos</a></p>
+  </div>
+  <footer>
+    <p><a href="hangman-english.html">Back to game</a></p>
+    <p><a href="./index.html">Home</a></p>
+  </footer>
+</body>
+</html>

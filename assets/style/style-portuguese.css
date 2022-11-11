@@ -1,0 +1,332 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--fonte-padrao);
+  font-size: 1rem;
+}
+
+:root {
+  --cor0: #FFFBFA;
+  --cor1: #F0FFC9;
+  --cor2: #D2E1FA;
+  --cor3: #6B8BBF;
+  --cor4: #C24733;
+  --cor5: #000000;
+  --cor6: #ffffff;
+  --cor7: #565656;
+  --cor8: #00000066;
+  --cor9: #c2463391;
+  --cor10: #f3b3a9;
+  --cor11: #00000079;
+  --cor12: #3f629b;
+
+  --fonte-padrao: 'Quicksand', sans-serif;
+  --fonte-keyboard: arial, sans-serif;
+}
+
+body {
+  background-color: var(--cor0);
+}
+
+#forca1 {
+  background-image: url(../images/forca1.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 5px;
+  width: 350px;
+  height: 350px;
+  display: block;
+}
+
+#forca2 {
+  background-image: url(../images/forca2.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 5px;
+  width: 350px;
+  height: 350px;
+  display: none;
+}
+
+#forca3 {
+  background-image: url(../images/forca3.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 5px;
+  width: 350px;
+  height: 350px;
+  display: none;
+}
+
+#forca4 {
+  background-image: url(../images/forca4.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 5px;
+  width: 350px;
+  height: 350px;
+  display: none;
+}
+
+#forca5 {
+  background-image: url(../images/forca5.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 5px;
+  width: 350px;
+  height: 350px;
+  display: none;
+}
+
+#forca6 {
+  background-image: url(../images/forca6.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 5px;
+  width: 350px;
+  height: 350px;
+  display: none;
+}
+
+#forca7 {
+  background-image: url(../images/forca7.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 5px;
+  width: 350px;
+  height: 350px;
+  display: none;
+}
+
+#win-image {
+  background-image: url(../images/acerto-miseravi2.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 5px;
+  width: 300px;
+  height: 300px;
+  margin: 5px auto;
+  display: none;
+}
+
+#lose-image {
+  background-image: url(../images/errou.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 5px;
+  width: 300px;
+  height: 300px;
+  margin: 5px auto;
+  display: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 3rem;
+  width: 85vw;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  width: 85vw;
+}
+
+.animate__animated {
+  width: 85vw;
+  font-weight: 300;
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+h3 {
+  text-align: center;
+  margin: 20px 0px 0px 0px;
+  font-size: 1.1rem;
+  width: 85vw;
+  font-weight: 300;
+}
+
+#info-word {
+  font-size: 1.25rem;
+  display: none;
+}
+
+#info-word span {
+  font-size: 2.5rem;
+}
+
+#secret-word {
+  font-size: 2.5rem;
+  display: none;
+}
+
+#remaining-trials {
+  display: none;
+  font-size: 1.25rem;
+}
+
+.buttons > button {
+  font-weight: bolder;
+  font-size: 1.2rem;
+  color: var(--cor0);
+  border-radius: 5px;
+  width: 130px;
+  height: 35px;
+  background-color: var(--cor4);
+  margin-right: 20px;
+  border: 2px solid var(--cor3);
+  cursor: pointer;
+  outline: none;
+}
+
+.buttons > button:hover {
+  color: var(--cor1);
+  background-color: var(--cor4);
+  transform: scale(0.98);
+  transform: translate(1px, 1px);
+  box-shadow: 2px 2px 5px var(--cor9);
+  transition: transform .5s, border .25s;
+}
+
+.reset-audio {
+  display: flex;
+  flex-direction: column;
+}
+
+.reset-audio button {
+  margin-top: 10px;
+}
+
+#reset {
+  margin-top: 20px;
+}
+
+#teclado {
+  width: 370px;
+  height: 150px;
+  text-align: center;
+  background-color: var(--cor5);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 3%;
+}
+
+fieldset {
+  margin: 10px 0px; 
+}
+
+input { 
+  font-family: var(--fonte-keyboard);
+  color: var(--cor6);
+  font-weight: 100;
+  font-size: 1.2rem;
+  background-color: var(--cor7);
+  border: 1px solid var(--cor8); 
+  padding: 5px;
+  margin: 3px;
+  width: 30px;
+  border-radius: 20%;
+  transition: transform 10s, border 10s;
+}
+
+.first-letters {
+  margin-top: 15px;
+}
+
+#teclado > input:hover {
+  color: white;
+  background-color: #565656b1;
+  transform: translate(1px, 1px);
+  box-shadow: 2px 2px 5px --cor8;
+  transition: transform .5s, border .25s;
+}
+
+footer p {
+  text-align: center;
+  padding-right: 10px;
+  margin: 10px 0px  20px 0px;
+}
+
+a {
+  color: var(--cor5);
+  text-decoration: none;
+  text-align: center;
+}
+
+.card {
+  --border-width: 7px;
+  position: relative;
+}
+
+.card::after {
+  position: fixed; /* deve mudar para fixed quando acabar o jogo */
+  content: "";
+  top: calc(-1 * var(--border-width));
+  left: calc(-1 * var(--border-width));
+  z-index: -10;
+  width: calc(100% + var(--border-width) * 2);
+  height: calc(100% + var(--border-width) * 2);
+  background: linear-gradient(
+    60deg,
+    var(--cor1),
+    var(--cor2),
+    var(--cor0),
+    var(--cor3),
+    var(--cor4)
+  );
+  background-size: 300% 300%;
+  border-radius: 5px;
+  animation: moveGradient 5s alternate infinite;
+  }
+
+@keyframes moveGradient {
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+#progress{
+  display: none;
+  position: relative;
+  height: 15px;
+  border-radius: 5px;
+  width: 450px;
+  border: 3px solid var(--cor1);
+  border-radius: 10px;
+}
+#progress .color{
+  position: absolute;
+  background-color: var(--cor12);
+  width: 0px;
+  height: 14px;
+  border-radius: 10px;
+  animation: progres 2s infinite linear;    
+}
+@keyframes progres{
+  0%{
+    width: 0%;
+  }
+  25%{
+      width: 25%;
+  }
+  50%{
+      width: 50%;
+  }
+  75%{
+      width: 75%;
+  }
+  100%{
+      width: 100%;
+  }
+};

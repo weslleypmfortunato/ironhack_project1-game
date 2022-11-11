@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;900&display=swap" rel="stylesheet">
+  <title>Let's Play</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: rgba(0, 0, 0, 0.889);
+    }
+
+    #portuguese {
+      width: 200px;
+      height: 125px;
+    }
+
+    #english {
+      width: 200px;
+      height: 125px;
+    }
+
+    div {
+      color: white;
+      display: block;
+      margin: auto;
+      text-align: center;
+      margin-top: 150px;
+    }
+
+    .port h1 {
+      color: white;
+      margin-bottom: 5px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500;
+      font-size: 1.25rem;
+      text-decoration: underline;
+    }
+
+    .eng h1 {
+      color: white;
+      margin-bottom: 5px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500;
+      font-size: 1.25rem;
+      text-decoration: underline;
+    }
+
+    .info h1 {
+      font-family: 'Roboto', sans-serif;
+      color: white;
+      font-weight: 500;
+      font-size: 2rem;
+    }
+
+    
+
+  </style>
+
+</head>
+
+<body class="card">
+
+  <div class="info">
+    <h1>Escolha o idioma desejado /</h1>
+    <h1>Choose the desired language</h1>
+  </div>
+
+  <div class="port">
+    <h1>Português</h1>
+    <a href="./hangman-portuguese.html" target="_self" rel="next"> <img id="portuguese" src="./assets/images/portuguese.jpg" alt="Portuguese Language"></a>
+  </div>
+
+  <div class="eng">
+    <h1>English</h1>
+    <a href="./hangman-english.html" target="_self" rel="next"> <img id="english" src="./assets/images/english.jpg" alt="English Language"></a>
+  </div>
+</body>
+</html>
